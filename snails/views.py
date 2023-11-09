@@ -6,3 +6,6 @@ def post_list(request):
     return render(request, 'snails/post_list.html', {'characters': characters})
 
 
+def post_detail(request, pk):
+    character = get_object_or_404(Character, pk=pk)
+    return render(request, 'snails/post_detail.html', {'character': character})

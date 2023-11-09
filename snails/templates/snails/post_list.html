@@ -1,9 +1,17 @@
 {% extends 'snails/base.html' %}
 
+{% load static %}
+
 {% block content %}
     {% for character in characters %}
-        <div>
-            <h2><a href="">{{ character.id_character }}</a></h2>
+        <div class="character-container">
+            <div class="image-container">
+                <img src="../../static/assets/{{ character.photo }}" alt="" width="150px" height="150px" border-radius="75px" style="border-radius: 75px;">
+            </div>
+            <div class="description">
+                <h2><a href="{% url 'post_detail' pk=character.pk %}">{{ character.id_character }}</a></h2>
+                <p>{{ character.race }}</p>
+            </div>
         </div>
     {% endfor %}
 {% endblock %}
