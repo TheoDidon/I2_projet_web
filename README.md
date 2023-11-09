@@ -1,6 +1,6 @@
 # I2_projet_web
 
-This is a project done in Centrale Marseille during a project.
+This is a project done in Centrale Marseille during a web project.
 It will represent a snail breeding
 
 
