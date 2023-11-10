@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Sniglet';
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Sniglet', sans-serif;
 }
 
 a:hover {
@@ -8,12 +16,20 @@ a:hover {
 }
 
 .page-header {
+    position: fixed;
     background-color: #C25100;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    width: 100%;
+    z-index: 999;
+    
 }
- 
+
+.col{
+    margin-top: 180px
+}
+
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
@@ -59,17 +75,28 @@ a:hover {
     
     .header-text {
         position: absolute;
-        top: 7px;
+        top: 36px;
         left: 100px;
     }
+
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     
+}
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-left: -100px;
 }
 
 .character-container {
     display: flex;
     padding: 10px;
     margin: 10px;
-    /* background-color: red; */
     border-radius: 20px;
     width: 300px;
     height: 200px;
@@ -83,7 +110,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
 }
 
 .description {
