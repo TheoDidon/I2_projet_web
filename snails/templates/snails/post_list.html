@@ -14,6 +14,19 @@
                 </div>
             </div>
         {% endfor %}
-
+    </div>
+    <h3>Equipements</h3>
+    <div class="animals">
+        {% for equipement in equipements %}
+            <div class="character-container">
+                <div class="image-container">
+                    <img src="../../static/assets/{{ equipement.photo }}" alt="" width="120px" height="120px" border-radius="60px" style="border-radius: 75px;">
+                </div>
+                <div class="description">
+                    <h2><a href="{url 'post_detail' pk=equipement.pk %}">{{ equipement.id_equip }}</a></h2>
+                    <p>{{ equipement.disponibilite }}</p>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
