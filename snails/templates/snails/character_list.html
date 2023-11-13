@@ -24,7 +24,7 @@
                     <img src="../../static/assets/{{ equipement.photo }}" alt="" width="120px" height="120px" border-radius="60px" style="border-radius: 75px;">
                 </div>
                 <div class="description">
-                    <h2><a href="{% url 'equipement_detail' id_equip=equipement.id_equip %}">{{ equipement.id_equip }}</a></h2> <!-- à changer-->
+                    <h2><a href="{% url 'equipement_detail' id_equip=equipement.id_equip %}">{{ equipement.id_equip }}</a></h2> 
                     <p>{{ equipement.disponibilite }}</p>
                 </div>
             </div>
