@@ -7,8 +7,10 @@
 
 * {
     margin: 0;
+    margin-bottom: 5px;
     padding: 0;
     font-family: 'Sniglet', sans-serif;
+    align-items: center;
 }
 
 a:hover {
@@ -17,7 +19,7 @@ a:hover {
 
 .page-header {
     position: fixed;
-    background-color: #C25100;
+    background-color: #4d8a19;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -25,6 +27,11 @@ a:hover {
     z-index: 999;
     
 }
+
+/* .carousel-inner img {
+    width: 400px;
+    height: 180px;
+} */
 
 .col{
     margin-top: 180px
@@ -104,6 +111,22 @@ a:hover {
     justify-content: center;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     transform: translate(0px, 0px); 
+    transition: 0.15s ease;
+}
+
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.character-container:hover {
+    width: 330px;
+    height: 220px;
+    animation: ani 1s;
 }
 
 .image-container {
@@ -116,5 +139,58 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
+    align-items: start;
+}
+
+.character_detail-container {
+    display: flex;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 550px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    transform: translate(0px, 0px); 
+    padding: 20px;
+}
+
+.character_detail-container div img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.character_detail-container div {
+    padding: 10px;
+}
+
+.validation-btn {
+    background-color: rgb(39, 193, 39);
+    color: white;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.validation-btn:hover {
+    color: white;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.back-btn {
+    background-color: rgb(22, 94, 228);
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.back-btn:hover {
+    color: white;
+    font-size: 16px;
+    transition: 0.1s;
 }
