@@ -8,9 +8,7 @@
         <img src="../../static/assets/{{ character.photo }}" alt="">
     </div>
     <div>
-        <h1>
-            <a href="/">{{ character.id_character }}</a>
-        </h1>
+        <h1>{{ character.id_character }}</h1>
     </div>
     <div>
         <form method="POST" class="post-form">{% csrf_token %}
